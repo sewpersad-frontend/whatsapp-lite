@@ -7,13 +7,18 @@ import { browserLocalPersistence, setPersistence } from "firebase/auth";
 
 
 
-// ✅ JOUW Firebase config (met correcte storage bucket)
+import { initializeApp } from "firebase/app";
+
 const firebaseConfig = {
   apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
   authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
   storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
 };
+
+const app = initializeApp(firebaseConfig);
+
+export default app;
 
 
 // Initialize Firebase
