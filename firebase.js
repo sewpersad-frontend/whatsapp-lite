@@ -9,7 +9,7 @@ import { browserLocalPersistence, setPersistence } from "firebase/auth";
 
 // ✅ JOUW Firebase config (met correcte storage bucket)
 const firebaseConfig = {
-  apiKey: "AIzaSyCZjLcppZKTAKt578X7CPS0pd7mfk9kYi4",
+  apiKey:,
   authDomain: "whatsapp-lite-app.firebaseapp.com",
   projectId: "whatsapp-lite-app",
   storageBucket: "whatsapp-lite-app.appspot.com",
