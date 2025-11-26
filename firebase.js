@@ -9,14 +9,12 @@ import { browserLocalPersistence, setPersistence } from "firebase/auth";
 
 // ✅ JOUW Firebase config (met correcte storage bucket)
 const firebaseConfig = {
-  apiKey:,
-  authDomain: "whatsapp-lite-app.firebaseapp.com",
-  projectId: "whatsapp-lite-app",
-  storageBucket: "whatsapp-lite-app.appspot.com",
-  messagingSenderId: "904691731392",
-  appId: "1:904691731392:web:d38d4d1a1254e4f7f19625",
-  measurementId: "G-DYC4N5E7TQ",
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
 };
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
